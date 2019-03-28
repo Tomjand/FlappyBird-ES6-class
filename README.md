@@ -1,8 +1,7 @@
-FlappyBird-ES6-class
-====================
-#### (kolejne lekcje to kolejne branch(e) )
-* klasy ES6,
-* moduły ES6,
-* wektory w animacjach i grach komputerowych
+# FlappyBird-ES6-class
 
-1. Lekcja 01: Organizacja plików i opis wektorów
+### Lekcja02 - wyświetlanie grafik i pętla loop()
+
+1. wyświetlanie grafik
+2. funkcja loop() i jej ponowne wykonywanie za pomocą requestAnimationFrame
+3. rysowanie na canvasie obrazków: bg.png oraz bird.png

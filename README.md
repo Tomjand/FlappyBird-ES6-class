@@ -1,5 +1,6 @@
 FlappyBird-ES6-class
 ====================
+#### (kolejne lekcje to kolejne branch(e) )
 * klasy ES6,
 * moduły ES6,
 * wektory w animacjach i grach komputerowych

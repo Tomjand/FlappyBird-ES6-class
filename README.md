@@ -1,7 +1,11 @@
 # FlappyBird-ES6-class
 
-### Lekcja03 - wektor prędkości oraz wyświetlenie pipeDown.png
+#### (kolejne lekcje to kolejne branch(e) )
 
-1. dodawanie prędkości czyli animacja dla bird.png
-2. dodanie klasy Pipe w pliku pipe.js - inny sposób na dodanie obiektu niż ten użyty w dla bird.png
-3. wyświetlenie obrazka pipeDown.png
+- klasy ES6,
+- moduły ES6,
+- wektory w animacjach i grach komputerowych
+
+1. Lekcja 01: Organizacja plików i opis wektorów
+2. Lekcja02 - wyświetlanie grafik i pętla requestAnimationFrame(loop)
+3. Lekcja03 - wektor prędkości oraz wyświetlenie pipeDown.png

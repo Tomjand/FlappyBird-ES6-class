@@ -1,12 +1,20 @@
+import graphics from "./graphics.js";
+import Vector from "./vector.js";
+
 class Game {
   constructor() {
-    // - klasa po stworzeniu obiektu automatycznie uruchamia metodę constructor(),
-    // - metoda konstruktor zawiera kod inicjujący dany obiekt.
+    this.bird = new Vector(10, 100);
+    this.loop = () => {
+      this.update();
+      requestAnimationFrame(this.loop);
+    };
   }
 
   update() {
-    // tą metodę będziemy uruchamiać dla każdej kolejnej klatki animacji (gry)
+    graphics.ctx.drawImage(graphics.bgImg, 0, 0);
+    graphics.ctx.drawImage(graphics.birdImg, this.bird.x, this.bird.y);
   }
 }
 
 const myGame = new Game();
+myGame.loop();

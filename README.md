@@ -1,7 +1,10 @@
 # FlappyBird-ES6-class
 
-### Lekcja02 - wyświetlanie grafik i pętla loop()
+#### (kolejne lekcje to kolejne branch(e) )
 
-1. wyświetlanie grafik
-2. funkcja loop() i jej ponowne wykonywanie za pomocą requestAnimationFrame
-3. rysowanie na canvasie obrazków: bg.png oraz bird.png
+- klasy ES6,
+- moduły ES6,
+- wektory w animacjach i grach komputerowych
+
+1. Lekcja 01: Organizacja plików i opis wektorów
+2. Lekcja02 - wyświetlanie grafik i pętla requestAnimationFrame(loop)

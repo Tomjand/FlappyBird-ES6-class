@@ -1,11 +1,8 @@
 # FlappyBird-ES6-class
 
-#### (kolejne lekcje to kolejne branch(e) )
+### Lekcja04 - wyświetlamy więcej obiektów Pipe
 
-- klasy ES6,
-- moduły ES6,
-- wektory w animacjach i grach komputerowych
-
-1. Lekcja 01: Organizacja plików i opis wektorów
-2. Lekcja02 - wyświetlanie grafik i pętla requestAnimationFrame(loop)
-3. Lekcja03 - wektor prędkości oraz wyświetlenie pipeDown.png
+1. kolejne przeszkody (obiekty Pipe) bedą dodawały się do tabicy "pipes"
+2. co 150 klatek wstawiamy nowy Pipe ( kiedy counterFrame === 150)
+3. zmieniamy położenia poszczególnych obiektów Pipe za pomocą funkcji map() wywołanej na tablicy pipes.
+4. jeśli Pipe "zniknał" z ekranu jest usuwany z tablicy pipes

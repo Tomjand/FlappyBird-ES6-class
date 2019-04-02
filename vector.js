@@ -12,7 +12,7 @@ class Vector {
     return Math.sqrt(this.x * this.x + this.y * this.y);
   }
 
-  incrementVector(v2) {
+  incrementByVector(v2) {
     this.x += v2.x;
     this.y += v2.y;
   }

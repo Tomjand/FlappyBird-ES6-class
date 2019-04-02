@@ -1,6 +1,6 @@
 import Vector from "./vector.js";
 
-class Pipe {
+class GameObject {
   constructor(x = 0, y = 0, speed, direction) {
     this.position = new Vector(x, y);
     this.velocity = new Vector(0, 0);
@@ -9,8 +9,8 @@ class Pipe {
   }
 
   updatePosition() {
-    this.position.incrementVector(this.velocity);
+    this.position.incrementByVector(this.velocity);
   }
 }
 
-export default Pipe;
+export default GameObject;

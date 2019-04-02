@@ -1,14 +1,10 @@
 import graphics from "./graphics.js";
-import Vector from "./vector.js";
-import Pipe from "./pipe.js";
+import GameObject from "./gameObject.js";
 
 class Game {
   constructor() {
     this.counterFrame = 0;
-    this.bird = new Vector(10, 100);
-    this.velocity = new Vector(10, 20);
-    this.velocity.setLength(3);
-    this.velocity.setAngle(Math.PI / 2);
+    this.bird = new GameObject(10, 20, 3, Math.PI/2);
     this.pipes = [];
     this.loop = () => {
       this.update();
@@ -20,12 +16,11 @@ class Game {
     this.counterFrame++;
     graphics.ctx.drawImage(graphics.bgImg, 0, 0);
     if (this.counterFrame === 150) {
-      this.pipes.push(new Pipe(200, 300, 1, Math.PI));
+      this.pipes.push(new GameObject(200, 300, 1, Math.PI));
       this.counterFrame = 0;
     }
-    console.log(this.pipes);
     this.pipes.map(pipe => {
-      if (pipe.position.x < 0 - graphics.pipeDownImg.width) {
+      if (pipe.position.x < -200 - graphics.pipeDownImg.width) {
         this.pipes.shift();
       }
       pipe.updatePosition();
@@ -36,8 +31,8 @@ class Game {
       );
     });
 
-    this.bird.incrementVector(this.velocity);
-    graphics.ctx.drawImage(graphics.birdImg, this.bird.x, this.bird.y);
+    this.bird.updatePosition();
+    graphics.ctx.drawImage(graphics.birdImg, this.bird.position.x, this.bird.position.y);
   }
 }
 
